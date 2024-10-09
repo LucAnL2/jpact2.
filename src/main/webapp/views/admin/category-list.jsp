@@ -17,9 +17,9 @@
 				<c:url value="${cate.images}" var="imgUrl"></c:url>
 			</c:if>
 			<c:if test="${cate.images.substring(0 , 5)!='https'}">
-				<c:url value="/image?fname=${cate.images }" var="imgUrl"></c:url>
+				<c:url value="/image?fname=${cate.images}" var="imgUrl"></c:url>
 			</c:if>
-			<td><img height="150" width="200" src="${imgUrl}" /></td>
+			<td><img height="150" width="200" src="${imgUrl}" alt="${imgUrl}"/></td>
 			<td>${cate.categoryname }</td>
 			<td>${cate.status}</td>
 			<td><a

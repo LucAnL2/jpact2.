@@ -23,11 +23,6 @@ import vn.iotstar.utils.Constant;
 public class CategoryController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	ICategoryService cateService = new CategoryService();
-
-	public CategoryController() {
-		super();
-	}
-
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
